@@ -1,0 +1,17 @@
+.home_container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.background-image {
+  max-height: 100vw;
+  max-width: 100vw;
+}
+.range_card {
+  margin: 10px 25px;
+}
