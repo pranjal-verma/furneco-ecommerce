@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.scss";
 import ProductRangeCard from "@/components/ProductRangeCard";
 function Home() {
+  const productRange = getProductsRange();
   return (
     <>
       <div className={styles.home_container}>
@@ -18,9 +19,14 @@ function Home() {
         {/* Range */}
         <div>
           <div className={styles.range_card}>
-            <p>Browse range</p>
-            <div>
-              <ProductRangeCard title="Dining" url="/dining.png" />
+            <div className={styles.title_container}>
+              <p className={styles.title}>Browse range</p>
+              <p className={styles.subheading}> Lorem ipsum dolor sit amet</p>
+            </div>
+            <div className={styles.range_scroll}>
+              {productRange.map((prod) => {
+                return <ProductRangeCard title={prod.title} url={prod.url} />;
+              })}
             </div>
           </div>
         </div>
@@ -30,3 +36,20 @@ function Home() {
 }
 
 export default Home;
+
+function getProductsRange() {
+  return [
+    {
+      title: "Dining",
+      url: "/dining.png",
+    },
+    {
+      title: "Living",
+      url: "living.png",
+    },
+    {
+      title: "Bedroom",
+      url: "/bedroom.png",
+    },
+  ];
+}
