@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./index.module.scss";
 import ProductRangeCard from "@/components/ProductRangeCard";
+import ProductInfoCard from "@/components/ProductInfoCard";
 function Home() {
   const productRange = getProductsRange();
   return (
@@ -26,6 +27,18 @@ function Home() {
             <div className={styles.range_scroll}>
               {productRange.map((prod) => {
                 return <ProductRangeCard title={prod.title} url={prod.url} />;
+              })}
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className={styles.range_card}>
+            <div className={styles.title_container}>
+              <p className={styles.title}>Our Products</p>
+            </div>
+            <div className={styles.range_scroll}>
+              {[...productRange, productRange[0]].map((prod) => {
+                return <ProductInfoCard />;
               })}
             </div>
           </div>

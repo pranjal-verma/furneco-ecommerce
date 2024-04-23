@@ -1,0 +1,30 @@
+.card_container {
+  height: 446px;
+  width: 285px;
+  margin: 10px;
+}
+
+.image_container {
+  height: 70%;
+  width: 100%;
+  padding: 0;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+}
+
+.info_container {
+  background-color: #f4f5f7;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  p {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+  }
+}
