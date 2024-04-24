@@ -8,13 +8,23 @@ function ProductInfoCard(props) {
   return (
     <>
       <div className={styles.card_container}>
-        <div className={styles.image_container}>
-          <img src={imageUrl} />
-        </div>
-        <div className={styles.info_container}>
-          <p>Slytherin</p>
-          <p>Stylish Cafe chair </p>
-          <p>18,500 </p>
+        <div className={styles.hover_div}>
+          <div className={styles.image_container}>
+            <img src={imageUrl} />
+          </div>
+          <div className={styles.info_container}>
+            <p style={{ fontSize: "22px", fontWeight: "600" }}>Slytherin</p>
+            <p style={{ color: "#898989", fontWeight: 500, fontSize: "14px" }}>
+              Stylish Cafe chair{" "}
+            </p>
+            <div>
+              <p
+                style={{ color: "#3A3A3A", fontWeight: 500, fontSize: "18px" }}
+              >
+                ₹ 18,500{" "}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
