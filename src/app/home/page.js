@@ -26,8 +26,10 @@ function Home() {
               <p className={styles.subheading}> Lorem ipsum dolor sit amet</p>
             </div>
             <div className={styles.range_scroll}>
-              {productRange.map((prod) => {
-                return <ProductRangeCard title={prod.title} url={prod.url} />;
+              {productRange.map((prod, i) => {
+                return (
+                  <ProductRangeCard key={i} title={prod.title} url={prod.url} />
+                );
               })}
             </div>
           </div>
@@ -38,8 +40,8 @@ function Home() {
               <p className={styles.title}>Our Products</p>
             </div>
             <div className={styles.range_scroll}>
-              {[...products, products[0]].map((prod) => {
-                return <ProductInfoCard imageUrl={prod.url} />;
+              {[...products, products[0]].map((prod, i) => {
+                return <ProductInfoCard key={i} imageUrl={prod.url} />;
               })}
             </div>
           </div>
