@@ -15,6 +15,7 @@ function Navbar() {
           src="/logos/main.svg"
           width={50}
           height={32}
+          style={{ marginTop: "6px" }}
           alt="Picture of the author"
         ></Image>
         <p>Furniro</p>
