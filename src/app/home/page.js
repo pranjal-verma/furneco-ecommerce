@@ -66,7 +66,14 @@ function Home() {
             </p>
             <ButtonSolid label="Browse"></ButtonSolid>
           </div>
-          <div className={styles.carousel_container}></div>
+          <div className={styles.carousel_container}>
+            <div className={styles.carousel_active_image}>
+              <img src="https://s3-alpha-sig.figma.com/img/f89a/66d9/4961c3801f4c07439f27b13468e5e545?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IOe2nj7lHwuXNsMS7eCIadb0-XduH01WpXyrOxOdnjK53SMkW5CTh4W6n20ug5l4Ja2-6iAQhHq9qux0UJo99NbzzTjGk5o5SFnPzNheeLA7SOc0NWYyaxeFLmwx90-FUasgX-e3wUlBW9fH9fAgVoOkLpfJ3QpINwwLCz3ymLVmbzC7vvN5GVMPZwCpEKDu5T-P91QioFd1PX4NQcW2ZFNRhnhLC0nPRsYh4vI8OYaCv-5clHdys1iztp8pZGEeR2zfoXx9YuQuvL39vBj-w1cIzC73tnoabPz3HAGb-aSs-~lhHiP16WG8eAyA8CPmg4fL6nRi5rOSN~npaII0RA__" />
+            </div>
+            <div className={styles.carousel_passsive_image}>
+              <img src={products[1].url} />
+            </div>
+          </div>
         </div>
       </div>
     </>

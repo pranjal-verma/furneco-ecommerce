@@ -69,4 +69,21 @@
 .carousel_container {
   width: 60%;
   border: 1px solid;
+  display: flex;
+}
+
+.carousel_active_image {
+  height: 80%;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.carousel_passsive_image {
+  height: 70%;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
