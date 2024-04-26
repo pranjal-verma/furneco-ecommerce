@@ -41,5 +41,32 @@
 .range_scroll {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.inspirations_card {
+  margin: 50px 0;
+  background-color: #fcf8f3;
+  height: 50vw;
+  width: 100%;
+  display: flex;
+
+  p {
+    font-family: Poppins;
+    margin: 0;
+  }
+}
+.explore_inspiration {
+  display: flex;
+  width: 40%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px 0 10%;
+}
+.carousel_container {
+  width: 60%;
+  border: 1px solid;
 }
