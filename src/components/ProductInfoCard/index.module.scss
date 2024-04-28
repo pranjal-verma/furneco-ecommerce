@@ -8,13 +8,17 @@
     font-family: Poppins;
   }
   &:hover .hover_div {
-    display: block;
+    visibility: visible;
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.5;
+    transition: visibility 250ms, opacity 500ms linear;
   }
+
   &:hover .popup {
-    display: flex;
+    visibility: visible;
+    transition: visibility 250ms, opacity 500ms linear;
   }
   .hover_div {
     padding: 0;
@@ -24,8 +28,8 @@
     z-index: 1;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     font-size: larger;
   }
 }
@@ -37,7 +41,8 @@
   z-index: 4;
   top: 50%;
   align-items: center;
-  display: none;
+  visibility: hidden;
+  display: flex;
 }
 .popup_cta {
   color: white;
