@@ -10,6 +10,17 @@ function Home() {
     <>
       <div className={styles.home_container}>
         <div className="background-image">
+          <div className={styles.collection_popup}>
+            <p style={{ fontWeight: "600", color: "#333333" }}>New Arrivals</p>
+            <p style={{ color: "#B88E2F", fontWeight: 700, fontSize: "52px" }}>
+              Discover Our New Collection
+            </p>
+            <p style={{ fontWeight: 400, fontSize: "18px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ButtonSolid label={"Buy Now"} invertColors={true} />
+          </div>
           <img
             src="/homepage-background.jpeg"
             style={{
@@ -64,7 +75,7 @@ function Home() {
               Our designer already made a lot of beautiful prototipe of rooms
               that inspire you
             </p>
-            <ButtonSolid label="Browse"></ButtonSolid>
+            <ButtonSolid label="Browse" invertColors={true}></ButtonSolid>
           </div>
           <div className={styles.carousel_container}>
             <div className={styles.carousel_active_image}>
