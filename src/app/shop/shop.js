@@ -2,6 +2,8 @@ import Banner from "@/components/Banner";
 import React from "react";
 import styles from "./index.module.scss";
 import ProductInfoCard from "@/components/ProductInfoCard";
+import WarrantyBanner from "@/components/WarrantyBanner";
+
 function ShopPage() {
   const products = getProducts();
   return (
@@ -18,6 +20,7 @@ function ShopPage() {
           })}
         </div>
       </div>
+      <WarrantyBanner />
     </>
   );
 }
