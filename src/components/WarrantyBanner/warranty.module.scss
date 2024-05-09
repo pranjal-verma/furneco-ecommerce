@@ -1,0 +1,29 @@
+.jumbotron {
+  height: 270px;
+  width: 100%;
+  font-family: Poppins;
+  background-color: #faf3ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  * p {
+    padding: 0;
+    margin: 0 6px;
+  }
+}
+.icon {
+
+  font-size: 60px;
+}
+.headline {
+}
+
+.byline {
+  color: gray;
+}
