@@ -7,6 +7,7 @@ import {
   SearchOutlined,
   UserAddOutlined,
 } from "@ant-design/icons";
+import Link from "next/link";
 function Navbar() {
   return (
     <div className={styles.navbar}>
@@ -21,8 +22,8 @@ function Navbar() {
         <p>Furniro</p>
       </div>
       <div className={styles.navigation}>
-        <p>Home</p>
-        <p>Shop</p>
+      <Link href="/home">  <p>Home</p> </Link>
+      <Link href="/shop">  <p>Shop</p> </Link>
         <p>About</p>
         <p>Contact</p>
       </div>
