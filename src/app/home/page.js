@@ -79,7 +79,7 @@ function Home() {
           </div>
           <div className={styles.carousel_container}>
             <div className={styles.carousel_active_image}>
-              <img src="https://s3-alpha-sig.figma.com/img/f89a/66d9/4961c3801f4c07439f27b13468e5e545?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IOe2nj7lHwuXNsMS7eCIadb0-XduH01WpXyrOxOdnjK53SMkW5CTh4W6n20ug5l4Ja2-6iAQhHq9qux0UJo99NbzzTjGk5o5SFnPzNheeLA7SOc0NWYyaxeFLmwx90-FUasgX-e3wUlBW9fH9fAgVoOkLpfJ3QpINwwLCz3ymLVmbzC7vvN5GVMPZwCpEKDu5T-P91QioFd1PX4NQcW2ZFNRhnhLC0nPRsYh4vI8OYaCv-5clHdys1iztp8pZGEeR2zfoXx9YuQuvL39vBj-w1cIzC73tnoabPz3HAGb-aSs-~lhHiP16WG8eAyA8CPmg4fL6nRi5rOSN~npaII0RA__" />
+              <img src="/banner.jpeg" />
             </div>
             <div className={styles.carousel_passsive_image}>
               <img src={products[1].url} />
@@ -113,35 +113,35 @@ function getProductsRange() {
 function getProducts() {
   return [
     {
-      url: "https://s3-alpha-sig.figma.com/img/4491/a0ea/43eebd52ea72d60650f31030ec4bf7e6?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CzDbAu76X5kMArUMYpFLFJf8WB0We2dCiPUA6YGiQIoLnIAX7RYq2iRnP7P6OJJQjQ-ih~~PmsljDh~rwX9~hIHJXpAmPbPkOPwsF4vOQGhk7EBmLBqIcHHeeVmTZ2CWqIUV-8Vjf99nbD4WDvjmxPDkXLvf1M5BjOEZ3YSPisl-AlTJAflbgsg3jdHrmrgRC8CahLJl-VXkNZhsFqP-Pje8dOquBN03EEdF5cAnpfNScOoRd43R~aiCBVChIyWMyol81SejYpe8hWCCt2tvgcxecMD-pHr~JgYksvipEQPPM6s-ADRkk2PIBNxk3HFcRnPr6oF2AeR6dJsW8uiqsQ__",
+      url: "/couch.png",
       title: "Sultherine",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/2084/99f3/7c62fb49f7d4a1a6a5dc5959b40150ed?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lFD09JNwIakJOEG45Lxl8hwG2GJyrNJrNgPJGmt~LTrUKaBKmXpg8S7HfQPzCPt4oXnpbJxgJfnouG6YIMuVNlmJn45CMyVLekH84YXTkH5C1Ki8JcJ~6MZjeT70TnrK55J2wtWLKwKLz2-CC63cusLr0K81sN9OWEvkkPUhHkl4edV92GjvX-ycGOLtyJr1TaBuNSo0jRP5DmAsUXKn4hC4gi7iBMHZBkSj1tMZX9ynlKTBjS~zNaE8fMQw9~Cjzj5ltrnL8bpcz9v9rwCipUPkbuCwaqcCA856DZPZrrIl5WhOyZK26fDqNFF4O~P0JMumZbOKlBWDSZ9bNQo-vw__",
+      url: "/lamp.png",
       title: "Grito",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/3c0a/6c98/3f9e66e49766034d57360d64e957ff6a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BZHUZAPcu8gBwi~y~xUYpchTGJd0jlFrnGjam-xY8tedejc8R5jDGYAVMMPOGCYcH4xaTvzVdGqJT63fJg1VCyd7~81RNksSQyx-dtaIf16u9R5CzUtPp9B~MnttVUL~t2hgQbXQECuw~3hBxzo6JfYqbB4suzZo00mQ6d9sMSzdfHxJLpumlx0yqG2MmO7Z1c1FIwVawdtawzGt6abSpQPyiEmhkmOYkO3veej3u8e7hgjy0vI44qwYCVgsGk~ln03kodSKO4MmiOiaVUFp9XZGbXAR5boyRO1WpKY7a-LjzvERtoyukv78XYLVIZkO44N1hasl5XohrG2B3JfG3Q__",
+      url: "/dining.png",
       title: "Lolito",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/4491/a0ea/43eebd52ea72d60650f31030ec4bf7e6?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CzDbAu76X5kMArUMYpFLFJf8WB0We2dCiPUA6YGiQIoLnIAX7RYq2iRnP7P6OJJQjQ-ih~~PmsljDh~rwX9~hIHJXpAmPbPkOPwsF4vOQGhk7EBmLBqIcHHeeVmTZ2CWqIUV-8Vjf99nbD4WDvjmxPDkXLvf1M5BjOEZ3YSPisl-AlTJAflbgsg3jdHrmrgRC8CahLJl-VXkNZhsFqP-Pje8dOquBN03EEdF5cAnpfNScOoRd43R~aiCBVChIyWMyol81SejYpe8hWCCt2tvgcxecMD-pHr~JgYksvipEQPPM6s-ADRkk2PIBNxk3HFcRnPr6oF2AeR6dJsW8uiqsQ__",
+      url: "/bedroom.png",
       title: "Sultherine",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/2084/99f3/7c62fb49f7d4a1a6a5dc5959b40150ed?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lFD09JNwIakJOEG45Lxl8hwG2GJyrNJrNgPJGmt~LTrUKaBKmXpg8S7HfQPzCPt4oXnpbJxgJfnouG6YIMuVNlmJn45CMyVLekH84YXTkH5C1Ki8JcJ~6MZjeT70TnrK55J2wtWLKwKLz2-CC63cusLr0K81sN9OWEvkkPUhHkl4edV92GjvX-ycGOLtyJr1TaBuNSo0jRP5DmAsUXKn4hC4gi7iBMHZBkSj1tMZX9ynlKTBjS~zNaE8fMQw9~Cjzj5ltrnL8bpcz9v9rwCipUPkbuCwaqcCA856DZPZrrIl5WhOyZK26fDqNFF4O~P0JMumZbOKlBWDSZ9bNQo-vw__",
+      url: "/couch2.png",
       title: "Grito",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/3c0a/6c98/3f9e66e49766034d57360d64e957ff6a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BZHUZAPcu8gBwi~y~xUYpchTGJd0jlFrnGjam-xY8tedejc8R5jDGYAVMMPOGCYcH4xaTvzVdGqJT63fJg1VCyd7~81RNksSQyx-dtaIf16u9R5CzUtPp9B~MnttVUL~t2hgQbXQECuw~3hBxzo6JfYqbB4suzZo00mQ6d9sMSzdfHxJLpumlx0yqG2MmO7Z1c1FIwVawdtawzGt6abSpQPyiEmhkmOYkO3veej3u8e7hgjy0vI44qwYCVgsGk~ln03kodSKO4MmiOiaVUFp9XZGbXAR5boyRO1WpKY7a-LjzvERtoyukv78XYLVIZkO44N1hasl5XohrG2B3JfG3Q__",
+      url: "/couch.png",
       title: "Lolito",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/4491/a0ea/43eebd52ea72d60650f31030ec4bf7e6?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CzDbAu76X5kMArUMYpFLFJf8WB0We2dCiPUA6YGiQIoLnIAX7RYq2iRnP7P6OJJQjQ-ih~~PmsljDh~rwX9~hIHJXpAmPbPkOPwsF4vOQGhk7EBmLBqIcHHeeVmTZ2CWqIUV-8Vjf99nbD4WDvjmxPDkXLvf1M5BjOEZ3YSPisl-AlTJAflbgsg3jdHrmrgRC8CahLJl-VXkNZhsFqP-Pje8dOquBN03EEdF5cAnpfNScOoRd43R~aiCBVChIyWMyol81SejYpe8hWCCt2tvgcxecMD-pHr~JgYksvipEQPPM6s-ADRkk2PIBNxk3HFcRnPr6oF2AeR6dJsW8uiqsQ__",
+      url: "/bedroom.png",
       title: "Sultherine",
     },
     {
-      url: "https://s3-alpha-sig.figma.com/img/2084/99f3/7c62fb49f7d4a1a6a5dc5959b40150ed?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lFD09JNwIakJOEG45Lxl8hwG2GJyrNJrNgPJGmt~LTrUKaBKmXpg8S7HfQPzCPt4oXnpbJxgJfnouG6YIMuVNlmJn45CMyVLekH84YXTkH5C1Ki8JcJ~6MZjeT70TnrK55J2wtWLKwKLz2-CC63cusLr0K81sN9OWEvkkPUhHkl4edV92GjvX-ycGOLtyJr1TaBuNSo0jRP5DmAsUXKn4hC4gi7iBMHZBkSj1tMZX9ynlKTBjS~zNaE8fMQw9~Cjzj5ltrnL8bpcz9v9rwCipUPkbuCwaqcCA856DZPZrrIl5WhOyZK26fDqNFF4O~P0JMumZbOKlBWDSZ9bNQo-vw__",
+      url: "/bedroom.png",
       title: "Grito",
     },
   ];
