@@ -9,7 +9,7 @@ function ShopPage() {
   return (
     <>
       <div>
-        <Banner></Banner>
+        <Banner label="Shop" />
         {/* Filter and pagination */}
         <div className={styles.filter}></div>
 
