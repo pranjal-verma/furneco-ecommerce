@@ -1,0 +1,18 @@
+.products_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 50px 70px;
+}
+
+.filter {
+  height: 100px;
+  width: 100%;
+  background-color: #fcf8f3;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrum_container {
+  justify-content: center;
+  font-family: Poppins;
+}
