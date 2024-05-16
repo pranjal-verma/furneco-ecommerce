@@ -4,6 +4,7 @@ import styles from "./index.module.scss";
 import WarrantyBanner from "@/components/WarrantyBanner/WarrantyBanner";
 import Breadcrumb from "@/components/Breadcrumb";
 import { useRouter } from "next/navigation";
+import StarRating from "@/components/StarRating";
 function ProductDetails({ params }) {
   const router = useRouter();
   const crumbs = [
@@ -22,11 +23,17 @@ function ProductDetails({ params }) {
         </div>
 
         {/* Product Cards section */}
-        {/* <div className={styles.products_container}>
-          {products.map((prod, i) => {
-            return <ProductInfoCard key={i} imageUrl={prod.url} />;
-          })}
-        </div> */}
+        <div>
+          <div className={styles.images_sections}></div>
+          <div className={styles.product_info}>
+            <div className={styles.info}>
+              <p>Asgaard Sofa</p>
+              <p>Rs. 150,000</p>
+              <StarRating initialRating={0} />
+            </div>
+            <div className={styles.action_items}></div>
+          </div>
+        </div>
       </div>
       <WarrantyBanner />
     </>
