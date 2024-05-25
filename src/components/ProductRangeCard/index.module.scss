@@ -1,0 +1,17 @@
+.card_container {
+  width: 350px;
+  height: 500px;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+}

@@ -1,0 +1,40 @@
+.star-rating {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: gold;
+  }
+}
+
+.filled {
+  color: gold;
+}
+
+/* Animation for filling stars */
+@keyframes fillStar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.star {
+  position: relative;
+
+  &::before {
+    content: "★";
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    color: transparent;
+    animation: fillStar 0.5s forwards;
+  }
+}
